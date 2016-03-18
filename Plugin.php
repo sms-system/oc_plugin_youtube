@@ -1,4 +1,4 @@
-<?php namespace Smisystem\Youtube;
+<?php namespace SmiSystem\Youtube;
 
 use System\Classes\PluginBase;
 
@@ -21,7 +21,7 @@ class Plugin extends PluginBase
 
     public function registerFormWidgets() {
         return [
-            'Smisystem\Youtube\FormWidgets\Youtube' => [
+            'SmiSystem\Youtube\FormWidgets\Youtube' => [
                 'label' => 'YouTube',
                 'code'  => 'youtube'
             ]

@@ -1,5 +1,4 @@
-<?php
-namespace Smisystem\Youtube\FormWidgets;
+<?php namespace SmiSystem\Youtube\FormWidgets;
 
 use Backend\Classes\FormField;
 use Backend\Classes\FormWidgetBase;
