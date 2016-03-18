@@ -1,5 +1,5 @@
 <?php
-namespace Smssystem\Youtube\FormWidgets;
+namespace Smisystem\Youtube\FormWidgets;
 
 use Backend\Classes\FormField;
 use Backend\Classes\FormWidgetBase;
