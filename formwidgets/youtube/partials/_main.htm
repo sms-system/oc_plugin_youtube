@@ -1,0 +1,22 @@
+<div class="pgraf_youtube-field">
+  <input name="<?= $name; ?>[code]" value="<?= $value['code']; ?>" type="hidden" class="data_code"/>
+  <input name="<?= $name; ?>[title]" value="<?= $value['title']; ?>" type="hidden" class="data_title"/>
+  <input name="<?= $name; ?>[author]" value="<?= $value['author']; ?>" type="hidden" class="data_author"/>
+  <input name="<?= $name; ?>[thumb]" value="<?= $value['thumb']; ?>" type="hidden" class="data_thumb"/>
+  <input id="<?= $this->getId(); ?>" value="<?= $url; ?>" type="text" placeholder="" autocomplete="off" maxlength="255" class="url form-control"/>
+  <div class="desc<?php if(!$value['thumb']): ?> hidden<?php endif; ?>">
+    <a href="<?= $url; ?>" target="_blank" class="thumb"><img src="<?= $value['thumb']; ?>"/></a>
+    <a href="<?= $url; ?>" target="_blank"><h2 class="title"><?= $value['title']; ?></h2></a>
+    <div class="author"><?= $value['author']; ?></div>
+  </div>
+</div>
+<script>
+  (function(){
+    var $widget = $('#<?= $this->getId(); ?>').closest('.pgraf_youtube-field');
+    $widget.find('.url')
+      .on('change', YouTubeField.change)
+      .on('keydown', YouTubeField.keydown);
+    $widget.find('.thumb')
+      .on('click', YouTubeField.thumbClick);
+  })();
+</script>

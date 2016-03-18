@@ -1,0 +1,41 @@
+.pgraf_youtube-field .form-control {
+  border-radius: 0;
+}
+.pgraf_youtube-field .desc {
+  display: block;
+  overflow: hidden;
+  border: solid 1px #f5f5f5;
+  background: #fff;
+  box-shadow: -2px 3px 10px -4px #b3b3b3;
+  font-family: Roboto, arial, sans-serif;
+}
+.pgraf_youtube-field .desc.hidden {
+  display: none;
+}
+.pgraf_youtube-field .desc .thumb {
+  float: left;
+}
+.pgraf_youtube-field .desc .title,
+.pgraf_youtube-field .desc .author {
+  margin: 0 10px 0 130px;
+  padding: 2px 0;
+}
+.pgraf_youtube-field .desc .title {
+  padding-top: 8px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #333;
+  font-size: 14px;
+}
+.pgraf_youtube-field .desc .author {
+  color: #767676;
+  font-size: 11px;
+}
+.pgraf_youtube-field .desc.fail {
+  border: solid 1px #b32b00;
+}
+.pgraf_youtube-field .desc.fail .author {
+  font-weight: 700;
+  font-size: 14px;
+  color: #b32b00;
+}
