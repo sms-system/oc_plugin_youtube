@@ -14,7 +14,7 @@
   (function(){
     var $widget = $('#<?= $this->getId(); ?>').closest('.pgraf_youtube-field');
     $widget.find('.url')
-      .on('change', YouTubeField.change)
+      .on('input', YouTubeField.change)
       .on('keydown', YouTubeField.keydown);
     $widget.find('.thumb')
       .on('click', YouTubeField.thumbClick);
