@@ -59,6 +59,7 @@ var YouTubeField = (function(){
       $widget.find('.thumb img').attr('src', data.thumbnail_url);
       $widget.find('.title').text(data.title);
       $widget.find('.author').text(data.author_name);
+      $widget.find('a').attr('href', data.url);
     }
     function clearData() {
       updateData({
